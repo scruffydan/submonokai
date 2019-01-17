@@ -5,25 +5,43 @@
 // https://guide.taskpaper.com/reference/stylesheets/
 //
 
+//SubMonkai Colors
+@Background: #272822;
+@Foreground: #F8F8F2;
+@Selection: #49483E;
+@Comments: #75715E;
+@Sidebar: #171714;
+
+@Red: #ED3A2C;
+@Orange: #FF9800;
+@Yellow: #E6DC6D;
+@Magenta: #FB2B71;
+@Green: #B3E435;
+@LightBlue: #00DFF3;
+@Blue: #0097F3;
+@White: #F8F8F2;
+@Grey: #808080;
+@Black: #1D1E19;
+
 // Dark Appearance Colors
-@dark-text-color: #F8F8F2;
-@dark-background-color: #272822;
+@dark-text-color: @Foreground;
+@dark-background-color: @Background;
 @dark-guide-line-color-percent: 30%;
 @dark-handle-secondary-color-percent: 40%;
 @dark-selection-color-percent: 50%;
-@dark-searchbar-background-color: #171714;
+@dark-searchbar-background-color: @Sidebar;
 
 // Font
 @font-family: 'Source Code Pro', -apple-user;
 
 // Sidebar (not currently working)
 sidebar { 
-    background-color: #171714;
+    background-color: @Background;
 }
 
 // Project Color
 item[data-type="project"] {
-    color: #E6DC6D;
+    color: @Yellow;
 }
 
 item[data-type="project"] {
@@ -31,7 +49,16 @@ item[data-type="project"] {
     font-size: @user-font-size*1.2;
 }
 
+// Handles
+@handle-color: @Red;
+@handle-secondary-color: @Red;
+
+//Editor Settings
+editor {
+    guide-line-color: @Blue;
+}
+
 // Today Color
 item[data-today], {
-    color: #FF9800;
+    color: @Orange;
 }
