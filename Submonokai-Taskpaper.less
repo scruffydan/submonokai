@@ -1,0 +1,37 @@
+//
+//
+//
+// https://guide.taskpaper.com/using-taskpaper/using-stylesheets.html
+// https://guide.taskpaper.com/reference/stylesheets/
+//
+
+// Dark Appearance Colors
+@dark-text-color: #F8F8F2;
+@dark-background-color: #272822;
+@dark-guide-line-color-percent: 30%;
+@dark-handle-secondary-color-percent: 40%;
+@dark-selection-color-percent: 50%;
+@dark-searchbar-background-color: #171714;
+
+// Font
+@font-family: 'Source Code Pro', -apple-user;
+
+// Sidebar (not currently working)
+sidebar { 
+    background-color: #171714;
+}
+
+// Project Color
+item[data-type="project"] {
+    color: #E6DC6D;
+}
+
+item[data-type="project"] {
+    font-weight: bold;
+    font-size: @user-font-size*1.2;
+}
+
+// Today Color
+item[data-today], {
+    color: #FF9800;
+}
