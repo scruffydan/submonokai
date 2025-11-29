@@ -2,6 +2,7 @@
 
 * Background: #272822
 * Foreground (text): #F8F8F2
+* Cursor #383830
 * Selection: #49483E
 * Comments: #75715E
 * Sidebar: #171714
