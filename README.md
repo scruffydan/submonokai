@@ -14,7 +14,6 @@ A dark colour theme inspired by Sublime Text's Monokai, adapted for terminals, w
 | [Blink Shell](#blink-shell) | [SubMonokai-Blink.js](SubMonokai-Blink.js) |
 | [Ulysses](#ulysses) | [SubMonokai.ultheme](SubMonokai.ultheme) |
 | [TaskPaper](#taskpaper) | [Submonokai-Taskpaper.less](Submonokai-Taskpaper.less) |
-| [OmniFocus 2](#omnifocus-2) | [SubMonokai.ofocus-style](SubMonokai.ofocus-style) |
 
 Open the file for your app and use GitHub's **Download raw file** button to save it. You can also download the whole repository with **Code → Download ZIP**.
 
@@ -78,17 +77,6 @@ See the [T3-Code appearance guide](https://github.com/pingdotgg/t3code/blob/main
 The stylesheet uses **Source Code Pro**. Install it from the [fonts below](#fonts), or change `@font-family` in the stylesheet to your preferred font.
 
 [TaskPaper stylesheet guide](https://guide.taskpaper.com/customizing-taskpaper/creating-stylesheets.html)
-
-### OmniFocus 2
-
-This is a legacy style for OmniFocus 2 on macOS.
-
-1. Download `SubMonokai.ofocus-style`.
-2. Open **OmniFocus → Preferences → Style**.
-3. Choose **Import Style** from the sharing menu and select the file.
-4. Select the imported colour palette.
-
-[OmniFocus 2 style preferences](https://support.omnigroup.com/documentation/omnifocus/mac/2.10/en/preferences/)
 
 ## Palette
 
