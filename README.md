@@ -9,6 +9,8 @@ A dark colour theme inspired by Sublime Text's Monokai, adapted for terminals, w
 | Application | Theme file |
 | --- | --- |
 | [T3-Code](#t3-code) | [SubMonokai-T3-Code.json](SubMonokai-T3-Code.json) |
+| [Ghostty](#ghostty) | [SubMonokai.ghostty](SubMonokai.ghostty) |
+| [Rex](#rex) | [SubMonokai.ghostty](SubMonokai.ghostty) |
 | [Terminal on macOS](#terminal-on-macos) | [SubMonokai.terminal](SubMonokai.terminal) |
 | [iTerm2](#iterm2) | [Submonokai.itermcolors](Submonokai.itermcolors) |
 | [Blink Shell](#blink-shell) | [SubMonokai-Blink.js](SubMonokai-Blink.js) |
@@ -27,6 +29,44 @@ Open the file for your app and use GitHub's **Download raw file** button to save
 
 See the [T3-Code appearance guide](https://github.com/pingdotgg/t3code/blob/main/docs/user/appearance.md) for more theme settings.
 
+### Ghostty
+
+Clone this repository and install a symlink to the theme:
+
+```sh
+git clone https://github.com/scruffydan/submonokai.git ~/Code/submonokai
+cd ~/Code/submonokai
+sh ./install-ghostty.sh
+```
+
+The installer links `SubMonokai.ghostty` to `~/.config/ghostty/themes/SubMonokai`
+(or `$XDG_CONFIG_HOME/ghostty/themes/SubMonokai` when set). It is safe to rerun
+and refuses to overwrite an existing theme from another source. Keep the checkout
+in place; pulling changes updates the linked theme.
+
+Add this line to your Ghostty config, then reload the configuration:
+
+```ini
+theme = SubMonokai
+```
+
+Remove any inline colour overrides if you want the complete theme to apply.
+Fonts, keybindings, and window settings stay in your own config.
+
+For a standalone installation, download `SubMonokai.ghostty` and save it as
+`~/.config/ghostty/themes/SubMonokai` instead.
+
+[Ghostty theme guide](https://ghostty.org/docs/features/theme)
+
+### Rex
+
+1. Download `SubMonokai.ghostty`, or use the file from your checkout.
+2. Open Rex's command palette and run **Import Theme File**.
+3. Select `SubMonokai.ghostty` and apply the imported theme.
+
+Re-import the file after changing its colours; the import is separate from
+Ghostty's symlink installation.
+
 ### Terminal on macOS
 
 1. Download `SubMonokai.terminal`.
@@ -44,6 +84,10 @@ See the [T3-Code appearance guide](https://github.com/pingdotgg/t3code/blob/main
 4. Choose **Submonokai** from **Color Presets** to apply it to that profile.
 
 [iTerm2 colour settings](https://iterm2.com/documentation-preferences-profiles-colors.html)
+
+The iTerm2 export matches the Ghostty/Rex theme's 16 ANSI colours, background,
+foreground, cursor, and selection colours. Bright white is `#EAEAEA`, matching
+the default previously inherited by the Ghostty configuration.
 
 ### Blink Shell
 
